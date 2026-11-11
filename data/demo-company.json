@@ -1,0 +1,35 @@
+{
+  "company": { "name": "Lumen Labs, Inc. (fictional)", "commonClassId": "CS" },
+  "classes": [
+    { "id": "CS", "name": "Common", "kind": "common" },
+    { "id": "SP", "name": "Seed Preferred", "kind": "preferred" }
+  ],
+  "stakeholders": [
+    { "id": "ada", "name": "Ada Moreno", "role": "founder" },
+    { "id": "kai", "name": "Kai Tanaka", "role": "founder" },
+    { "id": "kai-trust", "name": "Tanaka Family Trust", "role": "founder" },
+    { "id": "priya", "name": "Priya Shah", "role": "employee" },
+    { "id": "marco", "name": "Marco Diaz", "role": "employee" },
+    { "id": "jun", "name": "Jun Park", "role": "employee" },
+    { "id": "sam", "name": "Sam Okafor", "role": "advisor" },
+    { "id": "northbeam", "name": "Northbeam Ventures", "role": "investor" },
+    { "id": "harbor", "name": "Harbor Seed Fund", "role": "investor" },
+    { "id": "rosa", "name": "Rosa Lind", "role": "investor" }
+  ],
+  "events": [
+    { "type": "issue", "date": "2022-03-01", "holder": "ada", "classId": "CS", "shares": "5000000", "pricePerShare": "0.00001" },
+    { "type": "issue", "date": "2022-03-01", "holder": "kai", "classId": "CS", "shares": "4000000", "pricePerShare": "0.00001" },
+    { "type": "poolIncrease", "date": "2022-03-01", "shares": "1500000" },
+    { "type": "grant", "date": "2022-06-01", "grantId": "G-001", "holder": "priya", "shares": "200000", "strike": "0.05", "vesting": { "start": "2022-06-01", "months": 48, "cliffMonths": 12 } },
+    { "type": "safe", "date": "2022-09-15", "safeId": "SAFE-01", "holder": "harbor", "amount": "500000", "postMoneyCap": "8000000" },
+    { "type": "issue", "date": "2022-12-01", "holder": "northbeam", "classId": "SP", "shares": "1000000", "pricePerShare": "0.50" },
+    { "type": "grant", "date": "2023-01-10", "grantId": "G-002", "holder": "marco", "shares": "150000", "strike": "0.08", "vesting": { "start": "2023-01-10", "months": 48, "cliffMonths": 12 } },
+    { "type": "safe", "date": "2023-04-01", "safeId": "SAFE-02", "holder": "rosa", "amount": "150000", "postMoneyCap": "10000000", "discount": "0.2" },
+    { "type": "exercise", "date": "2023-07-01", "grantId": "G-001", "shares": "50000" },
+    { "type": "transfer", "date": "2023-11-01", "from": "kai", "to": "kai-trust", "classId": "CS", "shares": "500000" },
+    { "type": "grant", "date": "2024-02-01", "grantId": "G-003", "holder": "sam", "shares": "50000", "strike": "0.10", "vesting": { "start": "2024-02-01", "months": 24, "cliffMonths": 0 } },
+    { "type": "terminate", "date": "2024-05-10", "grantId": "G-002" },
+    { "type": "poolIncrease", "date": "2024-08-01", "shares": "500000" },
+    { "type": "grant", "date": "2024-09-01", "grantId": "G-004", "holder": "jun", "shares": "300000", "strike": "0.12", "vesting": { "start": "2024-09-01", "months": 48, "cliffMonths": 12 } }
+  ]
+}
